@@ -10,7 +10,10 @@ import * as icons from "@element-plus/icons-vue";
 import { toLine } from "./utils";
 import router from "./router";
 import App from "./App.vue";
-import mUI from './components'
+// import mUI from './components'
+// 替换打包之后的组件库
+import '../m-ui/style.css';
+import mUI from '../m-ui/index.js'
 
 const app = createApp(App);
 // 全局注册图标，牺牲一点性能
